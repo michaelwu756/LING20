@@ -1,0 +1,531 @@
+\documentclass[12pt]{article}
+\usepackage{multicol}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\begin{document}
+\title{Linguistics 20, Homework 8}
+\date{May 29th, 2019}
+\author{Michael Wu\\UID: 404751542\\TA: Eleanor Glewwe\\Discussion 1F Friday 9:00-9:50 AM}
+\maketitle
+
+\section*{Chapter 5, Problem 14}
+
+\paragraph{a)}
+
+the girl who Jane befriended
+\tikzset{level distance = 0.7cm, sibling distance = 0cm, every picture/.style = {scale=0.65}}
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N girl ]
+                [.CP [.C'
+                    C[+Rel]
+                    [.TP
+                        [.NP [.N' [.N Jane ] ] ]
+                        [.T'
+                            T[+pst]
+                            [.VP [.V'
+                                [.V befriended ]
+                                [.NP [.N' [.N who ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N girl ]
+                [.CP
+                    [.NP [.N' [.N who ] ] ]
+                    [.C'
+                        C[+Rel]
+                        [.TP
+                            [.NP [.N' [.N Jane ] ] ]
+                            [.T'
+                                T[+pst]
+                                [.VP [.V'
+                                    [.V befriended ]
+                                    [.NP [.N' [.N t ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\pagebreak
+
+\paragraph{b)}
+
+the girl who Millie talked to
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N girl ]
+                [.CP [.C'
+                    C[+Rel]
+                    [.TP
+                        [.NP [.N' [.N Millie ] ] ]
+                        [.T'
+                            T[+pst]
+                            [.VP
+                                [.V' [.V talked ] ]
+                                [.PP [.P'
+                                    [.P to ]
+                                    [.NP [.N' [.N who ] ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N girl ]
+                [.CP
+                    [.NP [.N' [.N who ] ] ]
+                    [.C'
+                        C[+Rel]
+                        [.TP
+                            [.NP [.N' [.N Millie ] ] ]
+                            [.T'
+                                T[+pst]
+                                [.VP
+                                    [.V' [.V talked ] ]
+                                    [.PP [.P'
+                                        [.P to ]
+                                        [.NP [.N' [.N t ] ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{c)}
+
+the cyclist who the biker met
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N cyclist ]
+                [.CP [.C'
+                    C[+Rel]
+                    [.TP
+                        [.NP
+                            [.Det the ]
+                            [.N' [.N biker ] ] ]
+                        [.T'
+                            T[+pst]
+                            [.VP [.V'
+                                [.V met ]
+                                [.NP [.N' [.N who ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N cyclist ]
+                [.CP
+                    [.NP [.N' [.N who ] ] ]
+                    [.C'
+                        C[+Rel]
+                        [.TP
+                            [.NP
+                                [.Det the ]
+                                [.N' [.N biker ] ] ]
+                            [.T'
+                                T[+pst]
+                                [.VP [.V'
+                                    [.V met ]
+                                    [.NP [.N' [.N t ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\pagebreak
+
+\paragraph{d)}
+
+the cyclist who met the biker
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N cyclist ]
+                [.CP [.C'
+                    C[+Rel]
+                    [.TP
+                        [.NP [.N' [.N who ] ] ]
+                        [.T'
+                            T[+pst]
+                            [.VP [.V'
+                                [.V met ]
+                                [.NP
+                                    [.Det the ]
+                                    [.N' [.N biker ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N cyclist ]
+                [.CP
+                    [.NP [.N' [.N who ] ] ]
+                    [.C'
+                        C[+Rel]
+                        [.TP
+                            [.NP [.N' [.N t ] ] ]
+                            [.T'
+                                T[+pst]
+                                [.VP [.V'
+                                    [.V met ]
+                                    [.NP
+                                        [.Det the ]
+                                        [.N' [.N biker ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{e)}
+
+the tree which the president stood under
+\begin{center}
+    \begin{tikzpicture}[scale=0.8]
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N tree ]
+                [.CP [.C'
+                    C[+Rel]
+                    [.TP
+                        [.NP
+                            [.Det the ]
+                            [.N' [.N president ] ] ]
+                        [.T'
+                            T[+pst]
+                            [.VP
+                                [.V' [.V stood ] ]
+                                [.PP [.P'
+                                    [.P under ]
+                                    [.NP [.N' [.N which ] ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=0.8]
+        \Tree [.NP
+            [.Det the ]
+            [.N'
+                [.N tree ]
+                [.CP
+                    [.NP [.N' [.N which ] ] ]
+                    [.C'
+                        C[+Rel]
+                        [.TP
+                            [.NP
+                                [.Det the ]
+                                [.N' [.N president ] ] ]
+                            [.T'
+                                T[+pst]
+                                [.VP
+                                    [.V' [.V stood ] ]
+                                    [.PP [.P'
+                                        [.P under ]
+                                        [.NP [.N' [.N t ] ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\section*{Part II}
+
+\paragraph{1)}
+
+Is Mary leaving?
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            C[+Q]
+            [.TP
+                [.NP [.N' [.N Mary ] ] ]
+                [.T'
+                    T[-pst]
+                    [.VP [.V'
+                        [.V is ]
+                        [.VP [.V' [.V leaving ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            [.C
+                [.T
+                    [.V is ]
+                    -pst ]
+                +Q ]
+            [.TP
+                [.NP [.N' [.N Mary ] ] ]
+                [.T'
+                    [.T t ]
+                    [.VP [.V'
+                        [.V t ]
+                        [.VP [.V' [.V leaving ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{2)}
+
+Have children seen a deer?
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            C[+Q]
+            [.TP
+                [.NP [.N' [.N children ] ] ]
+                [.T'
+                    T[-pst]
+                    [.VP [.V'
+                        [.V have ]
+                        [.VP [.V'
+                            [.V seen ]
+                            [.NP
+                                [.Det a ]
+                                [.N' [.N deer ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            [.C
+                [.T
+                    [.V have ]
+                    -pst ]
+                +Q ]
+            [.TP
+                [.NP [.N' [.N children ] ] ]
+                [.T'
+                    [.T t ]
+                    [.VP [.V'
+                        [.V t ]
+                        [.VP [.V'
+                            [.V seen ]
+                            [.NP
+                                [.Det a ]
+                                [.N' [.N deer ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{3)}
+
+Could the government help the poor people?
+\begin{center}
+    \begin{tikzpicture}[scale=0.9]
+        \Tree [.CP [.C'
+            C[+Q]
+            [.TP
+                [.NP
+                    [.Det the ]
+                    [.N' [.N government ] ] ]
+                [.T'
+                    [.T could ]
+                    [.VP [.V'
+                        [.V help ]
+                        [.NP
+                            [.Det the ]
+                            [.N'
+                                [.AP [.A' [.A poor ] ] ]
+                                [.N' [.N people ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=0.9]
+        \Tree [.CP [.C'
+            [.C
+                [.T could ]
+                +Q ]
+            [.TP
+                [.NP
+                    [.Det the ]
+                    [.N' [.N government ] ] ]
+                [.T'
+                    [.T t ]
+                    [.VP [.V'
+                        [.V help ]
+                        [.NP
+                            [.Det the ]
+                            [.N'
+                                [.AP [.A' [.A poor ] ] ]
+                                [.N' [.N people ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{4)}
+
+Should they have visited the museum?
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            C[+Q]
+            [.TP
+                [.NP [.N' [.N they ] ] ]
+                [.T'
+                    [.T should ]
+                    [.VP [.V'
+                        [.V have ]
+                        [.VP [.V'
+                            [.V visited ]
+                            [.NP
+                                [.Det the ]
+                                [.N' [.N museum ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            [.C
+                [.T should ]
+                +Q ]
+            [.TP
+                [.NP [.N' [.N they ] ] ]
+                [.T'
+                    [.T t ]
+                    [.VP [.V'
+                        [.V have ]
+                        [.VP [.V'
+                            [.V visited ]
+                            [.NP
+                                [.Det the ]
+                                [.N' [.N museum ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{5)}
+
+Who should buy a book?
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            C[+Q]
+            [.TP
+                [.NP [.N' [.N who ] ] ]
+                [.T'
+                    [.T should ]
+                    [.VP [.V'
+                        [.V buy ]
+                        [.NP
+                            [.Det a ]
+                            [.N' [.N book ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.CP
+            [.NP [.N' [.N who ] ] ]
+            [.C'
+                [.C
+                    [.T should ]
+                    +Q ]
+                [.TP
+                    [.NP [.N' [.N t ] ] ]
+                    [.T'
+                        [.T t ]
+                        [.VP [.V'
+                            [.V buy ]
+                            [.NP
+                                [.Det a ]
+                                [.N' [.N book ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{6)}
+
+Which restaurant is the manager losing?
+\begin{center}
+    \begin{tikzpicture}[scale=0.9]
+        \Tree [.CP [.C'
+            C[+Q]
+            [.TP
+                [.NP
+                    [.Det the ]
+                    [.N' [.N manager ] ] ]
+                [.T'
+                    T[-pst]
+                    [.VP [.V'
+                        [.V is ]
+                        [.VP [.V'
+                            [.V losing ]
+                            [.NP
+                                [.Det which ]
+                                [.N' [.N restaurant ] ] ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=0.9]
+        \Tree [.CP
+            [.NP
+                [.Det which ]
+                [.N' [.N restaurant ] ] ]
+            [.C'
+                [.C
+                    [.T
+                        [.V is ]
+                        -pst ]
+                    +Q ]
+                [.TP
+                    [.NP
+                        [.Det the ]
+                        [.N' [.N manager ] ] ]
+                    [.T'
+                        [.T t ]
+                        [.VP [.V'
+                            [.V t ]
+                            [.VP [.V'
+                                [.V losing ]
+                                [.NP t ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{7)}
+
+What can they cook?
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            C[+Q]
+            [.TP
+                [.NP [.N' [.N they ] ] ]
+                [.T'
+                    [.T can ]
+                    [.VP [.V'
+                        [.V cook ]
+                        [.NP [.N' [.N what ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.CP
+            [.NP [.N' [.N what ] ] ]
+            [.C'
+                [.C
+                    [.T can ]
+                    +Q ]
+                [.TP
+                    [.NP [.N' [.N they ] ] ]
+                    [.T'
+                        [.T t ]
+                        [.VP [.V'
+                            [.V cook ]
+                            [.NP [.N' [.N t ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\paragraph{8)}
+
+Who saw the lion?
+\begin{center}
+    \begin{tikzpicture}
+        \Tree [.CP [.C'
+            C[+Q]
+            [.TP
+                [.NP [.N' [.N who ] ] ]
+                [.T'
+                    T[+pst]
+                    [.VP [.V'
+                        [.V saw ]
+                        [.NP
+                            [.Det the ]
+                            [.N' [.N lion ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \Tree [.CP
+            [.NP [.N' [.N who ] ] ]
+            [.C'
+                C[+Q]
+                [.TP
+                    [.NP [.N' [.N t ] ] ]
+                    [.T'
+                        T[+pst]
+                        [.VP [.V'
+                            [.V saw ]
+                            [.NP
+                                [.Det the ]
+                                [.N' [.N lion ] ] ] ] ] ] ] ] ]
+    \end{tikzpicture}
+\end{center}
+
+\end{document}
